@@ -1,0 +1,6 @@
+<ul>
+{{#each this.files as |file|}}
+    <li>{{file}}</li>
+{{/each}}
+</ul>
+<button {{on "click" this.addFile}} >add</button>
