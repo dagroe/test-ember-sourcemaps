@@ -40,7 +40,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:^7.12.0, @babel/core@npm:^7.16.10, @babel/core@npm:^7.16.7, @babel/core@npm:^7.18.13, @babel/core@npm:^7.3.4":
+"@babel/core@npm:7.20.12":
   version: 7.20.12
   resolution: "@babel/core@npm:7.20.12"
   dependencies:
@@ -63,14 +63,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/generator@npm:^7.20.7":
-  version: 7.20.7
-  resolution: "@babel/generator@npm:7.20.7"
+"@babel/generator@npm:7.20.14":
+  version: 7.20.14
+  resolution: "@babel/generator@npm:7.20.14"
   dependencies:
     "@babel/types": ^7.20.7
     "@jridgewell/gen-mapping": ^0.3.2
     jsesc: ^2.5.1
-  checksum: 84b6983ffdb50c80c1c2e3f3c32617a7133d8effd1065f3e0f9bba188a7d54ab42a4dd5e42b61b843c65f9dd1aa870036ff0f848ebd42707aaa8a2b6d31d04f5
+  checksum: 5f6aa2d86af26e76d276923a5c34191124a119b16ee9ccc34aef654a7dec84fbd7d2daed2e6458a6a06bf87f3661deb77c9fea59b8f67faff5c90793c96d76d6
   languageName: node
   linkType: hard
 
@@ -3290,7 +3290,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-import-util@npm:^1.1.0, babel-import-util@npm:^1.3.0":
+"babel-import-util@npm:^1.1.0, babel-import-util@npm:^1.2.0, babel-import-util@npm:^1.3.0":
   version: 1.3.0
   resolution: "babel-import-util@npm:1.3.0"
   checksum: 41c6b4276ceefd2263f59be97a99bf8d948899c76587b273d115e91fa9067b0d9cc80ba727a795732052e078c30a3665649c725aed966826bf7c0a258a5fcf03
@@ -3349,6 +3349,18 @@ __metadata:
   dependencies:
     ember-rfc176-data: ^0.3.17
   checksum: 70a4926fe9c9a6553b877ecf09cd6a077e3c73ac13b5e269fee116c7dcaceaff28b317a7b68c16a9cb6d0470079fbbb3265c2cf755061341c9ccbde28c58d684
+  languageName: node
+  linkType: hard
+
+"babel-plugin-ember-template-compilation@npm:^1.0.0":
+  version: 1.0.2
+  resolution: "babel-plugin-ember-template-compilation@npm:1.0.2"
+  dependencies:
+    babel-import-util: ^1.2.0
+    line-column: ^1.0.2
+    magic-string: ^0.26.0
+    string.prototype.matchall: ^4.0.5
+  checksum: aa67214290e498c86a775737529ea353d88988875fc95781cc6eec509064c4430f9433891d9c43ec30f14490c3413277043eed167a0d9d1be442a951e2adffc4
   languageName: node
   linkType: hard
 
@@ -5418,6 +5430,29 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ember-cli-htmlbars@dagroe/ember-cli-htmlbars#0c3d9200eb92c34e7a524c307ca70cd1c9b070ad":
+  version: 6.1.2
+  resolution: "ember-cli-htmlbars@https://github.com/dagroe/ember-cli-htmlbars.git#commit=0c3d9200eb92c34e7a524c307ca70cd1c9b070ad"
+  dependencies:
+    "@ember/edition-utils": ^1.2.0
+    babel-plugin-ember-template-compilation: ^1.0.0
+    babel-plugin-htmlbars-inline-precompile: ^5.3.0
+    broccoli-debug: ^0.6.5
+    broccoli-persistent-filter: ^3.1.2
+    broccoli-plugin: ^4.0.3
+    ember-cli-version-checker: ^5.1.2
+    fs-tree-diff: ^2.0.1
+    hash-for-dep: ^1.5.1
+    heimdalljs-logger: ^0.1.10
+    js-string-escape: ^1.0.1
+    magic-string: ^0.27.0
+    semver: ^7.3.4
+    silent-error: ^1.1.1
+    walk-sync: ^2.2.0
+  checksum: a4be6705afe6fc493845a38853e0730b1b539e64b91941f99038bdac85bdb46189e19cd8e783e715dd718a1229f5011ad8ab5fcd6b21d6e3783d05d4a1889d5b
+  languageName: node
+  linkType: hard
+
 "ember-cli-htmlbars@npm:^6.1.1":
   version: 6.2.0
   resolution: "ember-cli-htmlbars@npm:6.2.0"
@@ -5437,29 +5472,6 @@ __metadata:
     silent-error: ^1.1.1
     walk-sync: ^2.2.0
   checksum: 1a0f94152ae381aed4c0300f4d8e756d60bfc4dfd1357fd49a0d36d420d65d6dc3f5761e604976f63edd11bc264959dddbd1b4c8401e9922711eafc748f4df92
-  languageName: node
-  linkType: hard
-
-"ember-cli-htmlbars@wagenet/ember-cli-htmlbars#fix-colocated-template-sourcemaps":
-  version: 6.2.0
-  resolution: "ember-cli-htmlbars@https://github.com/wagenet/ember-cli-htmlbars.git#commit=3407a9b2818bcd0c909edd8bc7bc3a5af9d94a48"
-  dependencies:
-    "@ember/edition-utils": ^1.2.0
-    babel-plugin-ember-template-compilation: ^2.0.0
-    babel-plugin-htmlbars-inline-precompile: ^5.3.0
-    broccoli-debug: ^0.6.5
-    broccoli-persistent-filter: ^3.1.2
-    broccoli-plugin: ^4.0.3
-    ember-cli-version-checker: ^5.1.2
-    fs-tree-diff: ^2.0.1
-    hash-for-dep: ^1.5.1
-    heimdalljs-logger: ^0.1.10
-    js-string-escape: ^1.0.1
-    magic-string: ^0.27.0
-    semver: ^7.3.4
-    silent-error: ^1.1.1
-    walk-sync: ^2.2.0
-  checksum: badfa66d14dcdd179e1da55deab4a435f1ec8274952cd9685801052a89c563111438868cdd3807de4473a2f5bccefb9eff2f8eae98df92b7facc6641a4665dd4
   languageName: node
   linkType: hard
 
@@ -5675,7 +5687,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ember-cli@npm:~4.8.0":
+"ember-cli@npm:4.8.0":
   version: 4.8.0
   resolution: "ember-cli@npm:4.8.0"
   dependencies:
@@ -8000,11 +8012,11 @@ __metadata:
     babel-eslint: ^10.1.0
     broccoli-asset-rev: ^3.0.0
     ember-auto-import: ^2.4.3
-    ember-cli: ~4.8.0
+    ember-cli: 4.8.0
     ember-cli-app-version: ^5.0.0
     ember-cli-babel: ^7.26.11
     ember-cli-dependency-checker: ^3.3.1
-    ember-cli-htmlbars: "wagenet/ember-cli-htmlbars#fix-colocated-template-sourcemaps"
+    ember-cli-htmlbars: "dagroe/ember-cli-htmlbars#0c3d9200eb92c34e7a524c307ca70cd1c9b070ad"
     ember-cli-inject-live-reload: ^2.1.0
     ember-cli-sri: ^2.1.1
     ember-cli-terser: ^4.0.2
@@ -8030,6 +8042,7 @@ __metadata:
     qunit: ^2.19.2
     qunit-dom: ^2.0.0
     typescript: ^4.9.4
+    vlq: ^2.0.4
     webpack: ^5.74.0
   languageName: unknown
   linkType: soft
@@ -9539,6 +9552,15 @@ __metadata:
   dependencies:
     sourcemap-codec: ^1.4.8
   checksum: 9a0e55a15c7303fc360f9572a71cffba1f61451bc92c5602b1206c9d17f492403bf96f946dfce7483e66822d6b74607262e24392e87b0ac27b786e69a40e9b1a
+  languageName: node
+  linkType: hard
+
+"magic-string@npm:^0.26.0":
+  version: 0.26.7
+  resolution: "magic-string@npm:0.26.7"
+  dependencies:
+    sourcemap-codec: ^1.4.8
+  checksum: 89b0d60cbb32bbf3d1e23c46ea93db082d18a8230b972027aecb10a40bba51be519ecce0674f995571e3affe917b76b09f59d8dbc9a1b2c9c4102a2b6e8a2b01
   languageName: node
   linkType: hard
 
@@ -13339,6 +13361,13 @@ __metadata:
   version: 1.1.2
   resolution: "vary@npm:1.1.2"
   checksum: ae0123222c6df65b437669d63dfa8c36cee20a504101b2fcd97b8bf76f91259c17f9f2b4d70a1e3c6bbcee7f51b28392833adb6b2770b23b01abec84e369660b
+  languageName: node
+  linkType: hard
+
+"vlq@npm:^2.0.4":
+  version: 2.0.4
+  resolution: "vlq@npm:2.0.4"
+  checksum: b2ed0d3a5423f34bba98a18250f8b13a96eebff9c8f9427fa9cd78065d31f35641f6fd659c5642253b79532000a37aec0582abac95d1ef4af2cd0c96a716f1b6
   languageName: node
   linkType: hard
 
